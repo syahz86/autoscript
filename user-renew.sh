@@ -1,7 +1,7 @@
 #
 #!/bin/bash
 #Script menambah masa aktif akaun SSH
-#Script by Kaizen Apeach
+#Script by syahz86
 #
 export DEBIAN_FRONTEND=noninteractive
 OS=`uname -m`;
@@ -10,7 +10,7 @@ MYIP2="s/xxxxxxxxx/$MYIP/g";
 cd
 clear
 echo "==================================================================="
-echo -e "  TAMBAH MASA AKTIF AKAUN PELANGGAN | MENU SCRIPT BY KAIZEN APEACH "
+echo -e "  TAMBAH MASA AKTIF AKAUN PELANGGAN | MENU SCRIPT BY syahz86 "
 echo "==================================================================="
 echo ""
 # begin of user-list
@@ -60,7 +60,7 @@ else
 	echo "Username [$username] belum didaftarkan lagi!"
 echo -e ""
 echo "==================================================================="
-echo -e "              SCRIPT BY KAIZEN APEACH | TESTER HACKER              "
+echo -e "              SCRIPT BY syahz86 | GollumVPN              "
 echo "==================================================================="
 echo -e ""
 	exit 1
