@@ -17,7 +17,7 @@
 cd
 clear
 echo "==================================================================="
-echo -e "           MAKLUMAT SISTEM | MENU SCRIPT BY KAIZEN APEACH          "
+echo -e "           MAKLUMAT SISTEM | MENU SCRIPT BY syahz86          "
 echo "==================================================================="
 echo ""
 sysinfo () {
