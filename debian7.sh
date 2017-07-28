@@ -71,7 +71,7 @@ echo 'echo -e "     ========================================================="' 
 echo 'echo -e "     *        Script By syahz86 | GollumVPN        *"' >> .bashrc
 echo 'echo -e "     ========================================================="' >> .bashrc
 echo 'echo -e "     *                     Contact Me                        *"' >> .bashrc
-echo 'echo -e "     *                Telegram: @simuncaibetollah                  *"' >> .bashrc
+echo 'echo -e "     *                Telegram: @simuncaibetollah            *"' >> .bashrc
 echo 'echo -e "     ========================================================="' >> .bashrc
 echo 'echo -e "     *       Taip \033[1;32mmenu\033[0m untuk menampilkan senarai menu        *"' >> .bashrc
 echo 'echo -e "     ========================================================="' >> .bashrc
