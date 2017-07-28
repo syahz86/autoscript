@@ -317,7 +317,7 @@ echo "-----------------"  | tee -a log-install.txt
 echo "1) VPS AUTO REBOOT JAM 12 TENGAH MALAM"  | tee -a log-install.txt
 echo "2) AUTO LOCK USER EXPIRED SETIAP 12 JAM"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Original Script by syahz86 | Tester Hacker"  | tee -a log-install.txt
+echo "Original Script by syahz86 | GollumVPN"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Installation log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
