@@ -1,7 +1,7 @@
 #
 #!/bin/bash
 #Script senarai user yang sudah expire akaunSSH
-#Script by Kaizen Apeach
+#Script by syahz86
 #
 echo "" > /root/infouser.txt
 echo "" > /root/expireduser.txt
@@ -41,12 +41,12 @@ done
 cd
 clear
 echo "==================================================================="
-echo -e "  SENARAI AKAUN YANG SUDAH EXPIRE | MENU SCRIPT BY KAIZEN APEACH   "
+echo -e "  SENARAI AKAUN YANG SUDAH EXPIRE | MENU SCRIPT BY syahz86   "
 echo "==================================================================="
 echo -e ""
 cat /root/expireduser.txt
 echo -e ""
 echo "==================================================================="
-echo -e "              SCRIPT BY KAIZEN APEACH | TESTER HACKER              "
+echo -e "              SCRIPT BY syahz86 | GollumVPN              "
 echo "==================================================================="
 echo -e ""
