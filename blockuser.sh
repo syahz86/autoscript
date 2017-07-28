@@ -1,12 +1,12 @@
 #
 #!/bin/bash
 #Script block akaun SSH
-#Script by Kaizen Apeach
+#Script by syahz86
 #
 cd
 clear
 echo "==================================================================="
-echo -e "           BLOCK USER MENU | MENU SCRIPT BY KAIZEN APEACH          "
+echo -e "           BLOCK USER MENU | MENU SCRIPT BY syahz86          "
 echo "==================================================================="
 echo ""
 echo "-------------------------------"
@@ -30,6 +30,6 @@ read -p "Akaun pelanggan yang akan di Ban: " Nama
 passwd -l $Nama
 echo ""
 echo "==================================================================="
-echo -e "              SCRIPT BY KAIZEN APEACH | TESTER HACKER              "
+echo -e "              SCRIPT BY syahz86 | GollumVPN              "
 echo "==================================================================="
 echo ""
