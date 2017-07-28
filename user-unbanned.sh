@@ -1,12 +1,12 @@
 #
 #!/bin/bash
 #Script block akaun SSH
-#Script by Kaizen Apeach
+#Script by syahz86
 #
 cd
 clear
 echo "==================================================================="
-echo -e "    BUKA SEKATAN AKAUN PELANGGAN | MENU SCRIPT BY KAIZEN APEACH    "
+echo -e "    BUKA SEKATAN AKAUN PELANGGAN | MENU SCRIPT BY syahz86    "
 echo "==================================================================="
 echo ""
 echo "" > /root/banneduser.txt
@@ -29,7 +29,7 @@ else
 	echo "Username [$username] belum didaftarkan lagi!"
   echo -e ""
 echo "==================================================================="
-echo -e "              SCRIPT BY KAIZEN APEACH | TESTER HACKER              "
+echo -e "              SCRIPT BY syahz86 | GollumVPN              "
 echo "==================================================================="
 echo -e ""
 
