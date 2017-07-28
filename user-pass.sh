@@ -1,7 +1,7 @@
 #
 #!/bin/bash
 #Script tukar password akaun SSH
-#Script by Kaizen Apeach
+#Script by syahz86
 #
 export DEBIAN_FRONTEND=noninteractive
 OS=`uname -m`;
@@ -10,7 +10,7 @@ MYIP2="s/xxxxxxxxx/$MYIP/g";
 cd
 clear
 echo "==================================================================="
-echo -e "      TUKAR PASSWORD PELANGGAN | MENU SCRIPT BY KAIZEN APEACH      "
+echo -e "      TUKAR PASSWORD PELANGGAN | MENU SCRIPT BY syahz86      "
 echo "==================================================================="
 echo -e ""
 # begin of user-list
@@ -62,7 +62,7 @@ else
 	echo "Username [$username] belum didaftarkan lagi!"
   echo -e ""
 echo "==================================================================="
-echo -e "              SCRIPT BY KAIZEN APEACH | TESTER HACKER              "
+echo -e "              SCRIPT BY syahz86 | GollumVPN              "
 echo "==================================================================="
 echo -e ""
 	exit 1
