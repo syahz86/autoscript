@@ -1,12 +1,12 @@
 #
 #!/bin/bash
 #Script block akaun SSH
-#Script by Kaizen Apeach
+#Script by syahz86
 #
 cd
 clear
 echo "==================================================================="
-echo -e "SENARAI PELANGGAN YANG SEDANG LOGIN | MENU SCRIPT BY KAIZEN APEACH " 
+echo -e "SENARAI PELANGGAN YANG SEDANG LOGIN | MENU SCRIPT BY syahz86 " 
 echo "==================================================================="
 echo ""
 data=( `ps aux | grep -i dropbear | awk '{print $2}'`);
@@ -46,6 +46,6 @@ echo " Kill multilogin dengan cara menaip kill -9 (nombor PID) "
 echo "-------------------------------------------------------------------"
 echo -e ""
 echo "==================================================================="
-echo -e "              SCRIPT BY KAIZEN APEACH | TESTER HACKER              "
+echo -e "              SCRIPT BY syahz86 | GollumVPN              "
 echo "==================================================================="
 echo -e ""
