@@ -4,7 +4,7 @@ cd
 clear
 echo ""
 echo -e "==================================================================="
-echo -e "             MENU UTAMA | MENU SCRIPT BY KAIZEN APEACH             "
+echo -e "             MENU UTAMA | MENU SCRIPT BY syahz86             "
 echo -e "==================================================================="
 echo -e "\033[1;31m 1\033[0m) Membuat akaun pelanggan              | \033[1;32mCreate user account\033[0m"
 echo -e "\033[1;31m 2\033[0m) Membuat akaun percubaan              | \033[1;32mCreate trial account\033[0m"
@@ -28,7 +28,7 @@ echo -e "\033[1;31m19\033[0m) Maklumat Sistem VPS                  | \033[1;32mV
 echo -e "\033[1;31m20\033[0m) Info script auto install             | \033[1;32mAuto install script info\033[0m"
 echo -e "\033[1;31m21\033[0m) Reboot server                        | \033[1;32mReboot server\033[0m"
 echo -e "==================================================================="
-echo -e "              SCRIPT BY KAIZEN APEACH | TESTER HACKER              "
+echo -e "              SCRIPT BY syahz86 | GollumVPN              "
 echo -e "==================================================================="
 echo -e ""
 echo -e "Sila masukkan nombor pilihan anda"
