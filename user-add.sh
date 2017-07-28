@@ -1,7 +1,7 @@
 #
 #!/bin/bash
 #Script menambah user ssh
-#Script by Kaizen Apeach
+#Script by syahz86
 #
 export DEBIAN_FRONTEND=noninteractive
 OS=`uname -m`;
@@ -10,7 +10,7 @@ MYIP2="s/xxxxxxxxx/$MYIP/g";
 cd
 clear
 echo "==================================================================="
-echo -e "          DAFTAR PELANGGAN | MENU SCRIPT BY KAIZEN APEACH          "
+echo -e "          DAFTAR PELANGGAN | MENU SCRIPT BY syahz86          "
 echo "==================================================================="
 echo -e ""
 read -p "Username : " username
@@ -39,7 +39,7 @@ else
 	echo "Aktif sehingga: $(date -d "$AKTIF days" +"%d-%m-%Y")"
   echo -e ""
   echo "==================================================================="
-  echo -e "              SCRIPT BY KAIZEN APEACH | TESTER HACKER              "
+  echo -e "              SCRIPT BY syahz86 | GollumVPN              "
   echo "==================================================================="
   echo -e ""
 fi
