@@ -1,12 +1,12 @@
 #
 #!/bin/bash
 #Script senarai user
-#Script by Kaizen Apeach
+#Script by syahz86
 #
 cd
 clear
 echo "==================================================================="
-echo -e "         SENARAI PELANGGAN | MENU SCRIPT BY KAIZEN APEACH          "
+echo -e "         SENARAI PELANGGAN | MENU SCRIPT BY syahz86          "
 echo "==================================================================="
 echo ""
 echo "-------------------------------------------------------------------"
@@ -25,7 +25,7 @@ JUMLAH="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)
 echo "-------------------------------------------------------------------"
 echo "Jumlah akaun: $JUMLAH user"
 echo "==================================================================="
-echo -e "              SCRIPT BY KAIZEN APEACH | TESTER HACKER              "
+echo -e "              SCRIPT BY syahz86 | GollumVPN              "
 echo "==================================================================="
 echo ""
 
