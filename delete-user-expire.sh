@@ -1,12 +1,12 @@
 #
 #!/bin/bash
 #Script delete akaun yang sudah expire
-#Script by Kaizen Apeach
+#Script by syahz86
 #
 cd
 clear
 echo "==================================================================="
-echo -e "   MEMADAM AKAUN YANG SUDAH EXPIRE | MENU SCRIPT BY KAIZEN APEACH  "
+echo -e "   MEMADAM AKAUN YANG SUDAH EXPIRE | MENU SCRIPT BY syahz86  "
 echo "==================================================================="
 echo -e ""
 echo "" > /root/infouser.txt
