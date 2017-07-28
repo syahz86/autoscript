@@ -1,12 +1,12 @@
 #
 #!/bin/bash
 #Script create akaun trial
-#Script by Kaizen Apeach
+#Script by syahz86
 #
 cd
 clear
 echo "==================================================================="
-echo -e "          TRIAL USER MENU | MENU SCRIPT BY KAIZEN APEACH           "
+echo -e "          TRIAL USER MENU | MENU SCRIPT BY syahz86           "
 echo "==================================================================="
 echo ""
 IP=`dig +short myip.opendns.com @resolver1.opendns.com`
@@ -27,6 +27,6 @@ echo -e "Config OpenVPN (TCP 1194): http://$IP:81/client.ovpn"
 echo -e "Username: $Login"
 echo -e "Password: $Pass\n"
 echo "==================================================================="
-echo -e "              SCRIPT BY KAIZEN APEACH | TESTER HACKER              "
+echo -e "              SCRIPT BY syahz86 | GollumVPN              "
 echo "==================================================================="
 echo ""
