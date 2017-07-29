@@ -146,11 +146,18 @@ service ssh restart
 apt-get -y install dropbear
 sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
 sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=443/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 443 -p 80"/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 109 -p 110"/g' /etc/default/dropbear
 echo "/bin/false" >> /etc/shells
-echo "/usr/sbin/nologin" >> /etc/shells
+sed -i 's/DROPBEAR_BANNER=""/DROPBEAR_BANNER="bannerssh"/g' /etc/default/dropbear
 service ssh restart
 service dropbear restart
+
+# bannerssh
+wget https://raw.githubusercontent.com/syahz86/VPS/master/conf/bannerssh
+mv ./bannerssh /bannerssh
+chmod 0644 /bannerssh
+service dropbear restart
+service ssh restart
 
 # install vnstat gui
 cd /home/vps/public_html/
@@ -264,6 +271,73 @@ chmod +x 19
 chmod +x 20
 chmod +x userlimit.sh
 chmod +x userexpired.sh
+
+#bonus block playstation
+iptables -A OUTPUT -d account.sonyentertainmentnetwork.com -j DROP
+iptables -A OUTPUT -d auth.np.ac.playstation.net -j DROP
+iptables -A OUTPUT -d auth.api.sonyentertainmentnetwork.com -j DROP
+iptables -A OUTPUT -d auth.api.np.ac.playstation.net -j DROP
+iptables-save
+
+#bonus block torrent
+iptables -A INPUT -m string --algo bm --string "BitTorrent" -j REJECT
+iptables -A INPUT -m string --algo bm --string "BitTorrent protocol" -j REJECT
+iptables -A INPUT -m string --algo bm --string "peer_id=" -j REJECT
+iptables -A INPUT -m string --algo bm --string ".torrent" -j REJECT
+iptables -A INPUT -m string --algo bm --string "announce.php?passkey=" -j REJECT
+iptables -A INPUT -m string --algo bm --string "torrent" -j REJECT
+iptables -A INPUT -m string --algo bm --string "info_hash" -j REJECT
+iptables -A INPUT -m string --algo bm --string "/default.ida?" -j REJECT
+iptables -A INPUT -m string --algo bm --string ".exe?/c+dir" -j REJECT
+iptables -A INPUT -m string --algo bm --string ".exe?/c_tftp" -j REJECT
+iptables -A INPUT -m string --string "peer_id" --algo kmp -j REJECT
+iptables -A INPUT -m string --string "BitTorrent" --algo kmp -j REJECT
+iptables -A INPUT -m string --string "BitTorrent protocol" --algo kmp -j REJECT
+iptables -A INPUT -m string --string "bittorrent-announce" --algo kmp -j REJECT
+iptables -A INPUT -m string --string "announce.php?passkey=" --algo kmp -j REJECT
+iptables -A INPUT -m string --string "find_node" --algo kmp -j REJECT
+iptables -A INPUT -m string --string "info_hash" --algo kmp -j REJECT
+iptables -A INPUT -m string --string "get_peers" --algo kmp -j REJECT
+iptables -A FORWARD -m string --algo bm --string "BitTorrent" -j REJECT
+iptables -A FORWARD -m string --algo bm --string "BitTorrent protocol" -j REJECT
+iptables -A FORWARD -m string --algo bm --string "peer_id=" -j REJECT
+iptables -A FORWARD -m string --algo bm --string ".torrent" -j REJECT
+iptables -A FORWARD -m string --algo bm --string "announce.php?passkey=" -j REJECT
+iptables -A FORWARD -m string --algo bm --string "torrent" -j REJECT
+iptables -A FORWARD -m string --algo bm --string "info_hash" -j REJECT
+iptables -A FORWARD -m string --algo bm --string "/default.ida?" -j REJECT
+iptables -A FORWARD -m string --algo bm --string ".exe?/c+dir" -j REJECT
+iptables -A FORWARD -m string --algo bm --string ".exe?/c_tftp" -j REJECT
+iptables -A FORWARD -m string --string "peer_id" --algo kmp -j REJECT
+iptables -A FORWARD -m string --string "BitTorrent" --algo kmp -j REJECT
+iptables -A FORWARD -m string --string "BitTorrent protocol" --algo kmp -j REJECT
+iptables -A FORWARD -m string --string "bittorrent-announce" --algo kmp -j REJECT
+iptables -A FORWARD -m string --string "announce.php?passkey=" --algo kmp -j REJECT
+iptables -A FORWARD -m string --string "find_node" --algo kmp -j REJECT
+iptables -A FORWARD -m string --string "info_hash" --algo kmp -j REJECT
+iptables -A FORWARD -m string --string "get_peers" --algo kmp -j REJECT
+iptables -A OUTPUT -m string --algo bm --string "BitTorrent" -j REJECT
+iptables -A OUTPUT -m string --algo bm --string "BitTorrent protocol" -j REJECT
+iptables -A OUTPUT -m string --algo bm --string "peer_id=" -j REJECT
+iptables -A OUTPUT -m string --algo bm --string ".torrent" -j REJECT
+iptables -A OUTPUT -m string --algo bm --string "announce.php?passkey=" -j REJECT
+iptables -A OUTPUT -m string --algo bm --string "torrent" -j REJECT
+iptables -A OUTPUT -m string --algo bm --string "info_hash" -j REJECT
+iptables -A OUTPUT -m string --algo bm --string "/default.ida?" -j REJECT
+iptables -A OUTPUT -m string --algo bm --string ".exe?/c+dir" -j REJECT
+iptables -A OUTPUT -m string --algo bm --string ".exe?/c_tftp" -j REJECT
+iptables -A OUTPUT -m string --string "peer_id" --algo kmp -j REJECT
+iptables -A OUTPUT -m string --string "BitTorrent" --algo kmp -j REJECT
+iptables -A OUTPUT -m string --string "BitTorrent protocol" --algo kmp -j REJECT
+iptables -A OUTPUT -m string --string "bittorrent-announce" --algo kmp -j REJECT
+iptables -A OUTPUT -m string --string "announce.php?passkey=" --algo kmp -j REJECT
+iptables -A OUTPUT -m string --string "find_node" --algo kmp -j REJECT
+iptables -A OUTPUT -m string --string "info_hash" --algo kmp -j REJECT
+iptables -A OUTPUT -m string --string "get_peers" --algo kmp -j REJECT
+iptables -A INPUT -p tcp --dport 25 -j REJECT   
+iptables -A FORWARD -p tcp --dport 25 -j REJECT 
+iptables -A OUTPUT -p tcp --dport 25 -j REJECT 
+iptables-save
 
 # finalisasi
 cd
